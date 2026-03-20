@@ -1,0 +1,12 @@
+package Limitation;
+
+//上界为某个具体值，u, v类型必须为Number
+public class NumberPair <U extends Number, V extends Number> extends Pair<U,V> {
+    public NumberPair(U first, V second) {
+        super(first, second);
+    }
+
+    public double sum(){
+        return getFirst().doubleValue() +  + getSecond().doubleValue();
+    }
+}
